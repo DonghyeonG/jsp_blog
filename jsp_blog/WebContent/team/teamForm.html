@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form
+		action="myteam.jsp"
+		method="post">
+		<fieldset>
+			<legend>Create_MyTeamInfo</legend>
+			이름:<br> <input type="text" name="name" value="홍길동" size="15">
+			<br>
+			<br> 성별:<br>
+			<label for="g1"><input id="g1" type="radio" name="gender" value="남자">남</label>
+			<label for="g2"><input id="g2" type="radio" name="gender"value="여자">여</label>
+			<br>
+			<br> 전화번호:<br> <input type="text" name="phone"
+				value="010-0000-0000"> <br>
+			<br> 우편번호:<br> <input type="text" name="zipcode" size="7"	maxlength="5" value="50329">
+			<button>주소	검색</button>
+			<br> <br> 주소:<br> <input type="text" name="address1"
+				value="주소" size="50"> <br> 상세주소:<br> <input
+				type="text" name="address2" value="상세주소" size="50"> <br>
+			<br> 보유기술:<br> 
+			<label for="skill1"><input id="skill1" type="checkbox" name="skill" value="Java"> Java</label> 
+			<label for="skill2"><input id="skill2" type="checkbox" name="skill" value="JSP">JSP</label> 
+			<label for="skill3"><input id="skill3" type="checkbox"	name="skill" value="MVC"> MVC</label>
+			<label for="skill4"><input	id="skill4" type="checkbox" name="skill" value="Spring"> Spring</label>
+			<label for="skill5"><input id="skill5" type="checkbox" name="skill" value="JS">JS</label> <br>
+			<br> 취미:<br> <select name="hobby">
+				<br>
+				<option value="미선택">선택해주세요.</option>
+				<option value="미선택">----------------------</option>
+				<option value="기술서적읽기">기술서적읽기</option>
+				<option value="영화보기">영화보기</option>
+				<option value="모바일게임">모바일게임</option>
+				<option value="보드게임">보드게임</option>
+				<option value="야구경기">야구경기</option>
+				<option value="축구">축구</option>
+			</select><br> 사진:<input type="file" name=:"filename"> <br>
+			<br> <input type="submit" value="완료"> <input
+				type="reset" value="취소">
+	</form>
+	</fieldset>
+</body>
+</html>
