@@ -85,6 +85,7 @@ A:visited{     /* A 태그의 링크를 방문한 경우 */
   background-color: #333333;
   border-color: #262626;
 }
+/* 화면작아졌을떄 상단바, 메뉴 위치 */
 @media (max-width: 992px) {
     .btn-block{
 		position: fixed;
@@ -103,4 +104,15 @@ A:visited{     /* A 태그의 링크를 방문한 경우 */
 }
 @media (max-width: 992px) {
 	
+}
+/* top img */
+.main-img{
+	width:120px;
+	height:auto;
+}
+/* top hover */
+.nav a:hover{
+	color: #fff;
+  background-color: #333333;
+  border-color: #262626;
 }

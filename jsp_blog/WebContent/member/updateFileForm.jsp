@@ -48,7 +48,7 @@ function inCheck(f) {
 <FORM name='frm' method='POST' action='./updateFileProc.jsp' 
 enctype="multipart/form-data" onsubmit="return inCheck(this)">
 <input type="hidden" name="id" value="<%=id%>"> 
-<input type="hidden" name="oldfile" value="<%=oldfile%>"> 
+<input type="hidden" name="oldfile" value="<%=oldfile%>" class="form-control"> 
   <TABLE class="table table-bordered">
     <TR>
       <TH>원본파일</TH>

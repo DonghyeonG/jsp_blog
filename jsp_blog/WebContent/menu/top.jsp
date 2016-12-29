@@ -24,24 +24,10 @@
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 .w3-sidenav a,.w3-sidenav h4 {font-weight:bold}
-#button_fixed
-{  
- 	color: #b3b3b3; 
-   background-color; 
-     position:relative; 
-     
-     top:55px; 
-    left:2%;   
+.main{
+	margin-left:300px;
 }
-@media (max-width: 992px) {
-    #button_fixed
-	{  
-	    position:fixed;     
-	    top:55px; 
-	    left:2%; 
-	    z-index:999;  
-	}
-}
+
 </style>
 <script>
 //logout
@@ -68,23 +54,23 @@ function w3_close() {
 <body class="w3-Snow w3-content" style="max-width:1600px">
 
 <!-- Sidenav/menu  (width:992px기준으로 메뉴토글이 나타남) -->
-<nav class="w3-sidenav w3-collapse w3-white w3-animate-left" style="z-index:11;width:300px;" id="mySidenav"><br>
-  <div class="w3-container w3-margin-left w3-margin-top" >
+<nav class="w3-sidenav w3-collapse w3-white w3-animate-left nav" style="z-index:11;width:300px; background-color:#e6e6e6;" id="mySidenav"><br>
+  <div class="w3-container w3-margin-left w3-margin-top " >
     <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding-5" title="close menu">
       <i class="fa fa-remove"></i>
     </a>
     <%if(id==null){ %>
-    	<img src="<%=root%>/menu/images/Penguins.jpg" style="width:45%;" class="w3-round"><br><br>
+    	<img src="<%=root%>/menu/images/Penguins.jpg" class="main-img w3-hover-opacity img-rounded w3-margin-left" ><br><br>
     <%}else{ %>
-    <img src="<%=root%>/member/storage/<%=fname %>" style="width:45%;" class="w3-round"><br><br>
+    <img src="<%=root%>/member/storage/<%=fname %>" class="main-img w3-hover-opacity img-rounded w3-margin-left"><br><br>
     <%} %>
     <h4 class="w3-padding-0"><b>
     <%if(id!=null){%>
 	 	<a href="<%=root%>/member/read.jsp?id=<%=id %>" onclick="w3_close()"><strong><%=mname%></strong> 님</a>
 	 <%}else{
-		 out.print("<strong>Guest</strong> 님");
+		 out.print("&nbsp;<strong>Guest</strong> 님");
 	 } %> 
-	</b></h4>
+	</b></h4><br>
  
 <!--   Menu list -->
     <a href="<%=root%>/index.jsp" onclick="w3_close()"	class="w3-padding w3-text-teal"><i	class="fa fa-home fa-fw w3-margin-right" ></i>홈</a>
@@ -108,7 +94,10 @@ function w3_close() {
     <%}else if(id!=null){%> 
      <a href="<%=root%>/member/deleteForm.jsp?id=<%=id %>" onclick="w3_close()"	class="w3-padding"><i class="fa fa-remove fa-fw w3-margin-right"></i>회원탈퇴</a>
     <% }%>
-</div>
+    <br>
+	 <img src="<%=root%>/menu/images/github.jpg" class="main-img w3-hover-opacity img-rounded w3-margin-left">
+	 <a href="https://github.com/DonghyeonG/jsp_blog" onclick="w3_close()">OpenSource</a>
+  </div>
   <div class="w3-section w3-padding-top w3-large">
     <a href="#" class="w3-hover-white w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-facebook-official"></i></a>
     <a href="#" class="w3-hover-white w3-hover-text-purple w3-show-inline-block"><i class="fa fa-instagram"></i></a>
@@ -117,11 +106,12 @@ function w3_close() {
     <a href="#" class="w3-hover-white w3-hover-text-light-blue w3-show-inline-block"><i class="fa fa-twitter"></i></a>
     <a href="#" class="w3-hover-white w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-linkedin"></i></a>
   </div>
+ 
 </nav>
 <!-- Overlay effect when opening sidenav on small screens -->
 <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 <!-- ! CONTENT! -->
-<div  class="w3-main" style="margin-left:300px" >
+<div  class="w3-main main"  >
 <!-- </div 는 bottom ! -->
 
 <!-- Menu Button -->
