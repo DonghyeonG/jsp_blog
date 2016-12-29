@@ -39,10 +39,6 @@
 /* 	font-family: gulim; */
 	font-size: 20px;
 }
-.btn-block{
-	position: relative;
-    top: -55px
-}
 </style>
 <script type="text/javascript">
 function read(str){
