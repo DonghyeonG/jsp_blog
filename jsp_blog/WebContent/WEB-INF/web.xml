@@ -36,4 +36,16 @@
     <url-pattern>/download</url-pattern> 
   </servlet-mapping>   
   <!-- ************************************************************** -->   
+  <!--************************suggest*************************************-->
+  <servlet><!-- 서블릿 이름과 서블릿 클래스 선언 -->
+        <description></description>
+        <display-name>Suggest</display-name>
+        <servlet-name>Suggest</servlet-name>
+        <servlet-class>suggest.Suggest</servlet-class>
+    </servlet>
+    <servlet-mapping><!-- URL상으로 접근해야 하는 경로명 -->
+        <servlet-name>Suggest</servlet-name>
+        <url-pattern>/suggest</url-pattern>
+    </servlet-mapping>
+  <!--********************************************************************-->
 </web-app>

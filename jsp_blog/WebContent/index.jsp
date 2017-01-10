@@ -55,6 +55,8 @@ function bread(bbsno) {
 	var url="<%=root%>/bbs/read.jsp";
 	url+="?bbsno="+bbsno;
 	url+="&nowPage=1";
+	url+="&col=";
+	url+="&word=";
 	location.href=url;
 }
 </script>

@@ -96,7 +96,7 @@ function w3_close() {
     <% }%>
     <br>
 	 <img src="<%=root%>/menu/images/github.jpg" class="main-img w3-hover-opacity img-rounded w3-margin-left">
-	 <a href="https://github.com/DonghyeonG/jsp_blog" onclick="w3_close()">OpenSource</a>
+	 <a href="https://github.com/DonghyeonG/jsp_blog" target="_blank" onclick="w3_close()">OpenSource</a>
   </div>
   <div class="w3-section w3-padding-top w3-large">
     <a href="#" class="w3-hover-white w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-facebook-official"></i></a>
