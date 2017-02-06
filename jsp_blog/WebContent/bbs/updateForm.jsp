@@ -48,6 +48,12 @@ function incheck(f){
 </style> 
 <link href="<%=root%>/css/style.css" rel="Stylesheet" type="text/css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" 	src="${pageContext.request.contextPath}/ckeditor/ckeditor.js"></script>
+<script type="text/JavaScript">
+	window.onload = function() {
+		CKEDITOR.replace('content'); // <TEXTAREA>태그 id 값
+	};
+</script>
 </head> 
 <!-- *********************************************** -->
 <body>

@@ -21,6 +21,29 @@
     <session-timeout>30</session-timeout> <!-- 30분 -->
   </session-config> 
    
+   
+  <!-- CKFINDER start -->
+  <servlet>
+    <servlet-name>ConnectorServlet</servlet-name>
+    <servlet-class>com.ckfinder.connector.ConnectorServlet</servlet-class>
+    <init-param>
+      <param-name>XMLConfig</param-name>
+      <param-value>/WEB-INF/ckfinder-config.xml</param-value>
+    </init-param>
+    <init-param>
+      <param-name>debug</param-name>
+      <param-value>false</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>ConnectorServlet</servlet-name>
+    <url-pattern>
+                   /ckfinder/core/connector/java/connector.java
+          </url-pattern>
+  </servlet-mapping>
+   
   <!-- ************************************************************** --> 
   <!-- 파일 다운로드 서블릿  
   접속 주소가 http://127.0.0.1:8000/download로 시작하면 
